@@ -9,3 +9,5 @@ function Bird() {
 // Use the new keyword to create a new object instance
 
 let blueBird = new Bird();
+
+console.log(blueBird.name, blueBird.color, blueBird.numLegs);

@@ -19,7 +19,7 @@ Use the duck example for guidance. */
 let dog = {
     name: "Spot",
     numLegs: 4,
-    sayLegs: function() {return "This dog has " + dog.numLegs + " legs.";}
+    sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
   };
   
-  dog.sayLegs();
+  console.log(dog.sayLegs());

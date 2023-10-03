@@ -21,3 +21,12 @@ for (const property in duck) {
 console.log(ownProps);  // ['name', 'numLegs']
 
 // Add the own properties of canary to the array ownProps.
+ownProps = [];
+
+for (const property in canary) {
+    if (canary.hasOwnProperty(property)) {
+        ownProps.push(property);
+    }
+}
+
+console.log(ownProps);

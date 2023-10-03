@@ -12,3 +12,13 @@ console.log(duck.numLegs);  // 2
 console.log(canary.numLegs);  // 2
 
 // Using prototype properties reduces code duplication
+
+// Add a numLegs property to the prototype of Dog
+function Dog(name) {
+    this.name = name;
+  }
+  
+  
+  
+  // Only change code above this line
+  let beagle = new Dog("Snoopy");

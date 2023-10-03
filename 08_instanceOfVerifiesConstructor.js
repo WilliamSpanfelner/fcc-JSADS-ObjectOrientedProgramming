@@ -12,3 +12,11 @@ let Bird = function(name, color) {
 let crow = new Bird("Alexis", "black");
 
 console.log(crow instanceof Bird);  // true
+
+let canary = {
+    name: "Mildred",
+    color: "Yellow",
+    numLegs: 2
+}
+
+console.log(canary instanceof Bird);  // false

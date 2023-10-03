@@ -15,3 +15,12 @@ console.log(blueBird.name, blueBird.color, blueBird.numLegs);
 // Modify values like so:
 blueBird.name = "Fred";
 console.log(blueBird.name);
+
+/* Use the Dog constructor from the last lesson to create a new instance 
+of Dog, assigning it to a variable hound. */
+function Dog() {
+    this.name = "Rupert";
+    this.color = "brown";
+    this.numLegs = 4;
+  }
+  // Only change code below this line

@@ -11,3 +11,7 @@ function Bird() {
 let blueBird = new Bird();
 
 console.log(blueBird.name, blueBird.color, blueBird.numLegs);
+
+// Modify values like so:
+blueBird.name = "Fred";
+console.log(blueBird.name);

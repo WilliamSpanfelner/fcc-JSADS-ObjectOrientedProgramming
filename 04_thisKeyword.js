@@ -9,3 +9,17 @@ let duck = {
 };
 
 console.log(duck.sayName());
+
+/* Using this way of accessing object properties means that 
+the object name can change without requiring any references 
+to be changed */
+
+/* Modify the dog.sayLegs method to remove any references to dog. 
+Use the duck example for guidance. */
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {return "This dog has " + dog.numLegs + " legs.";}
+  };
+  
+  dog.sayLegs();

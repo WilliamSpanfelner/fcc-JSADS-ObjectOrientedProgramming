@@ -38,5 +38,11 @@ candidate is a Dog, otherwise return false. */
 
 // Only change code below this line
 function joinDogFraternity(candidate) {
-
+    if (candidate.constructor === Dog) {
+        return true;
+    }
+    return false;
 }
+
+console.log(joinDogFraternity(duck));  // false
+console.log(joinDogFraternity(beagle));  // true

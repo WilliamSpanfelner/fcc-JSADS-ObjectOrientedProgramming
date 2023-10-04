@@ -25,9 +25,12 @@ Animal.prototype = {
     eat: function() {
       console.log("nom nom nom");
     }
-  };
-  
-  // Only change code below this line
-  
-  let duck; // Change this line
-  let beagle; // Change this line
+};
+
+// Only change code below this line
+
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line
+
+duck.eat();  // nom nom nom
+beagle.eat();  // nom nom nom

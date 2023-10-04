@@ -35,3 +35,14 @@ let boat = {
 };
   
 // Only change code below this line
+let glideMixin = function(obj) {
+    obj.glide = function() {
+        console.log("Gliding now...");
+    }
+};
+
+glideMixin(bird);
+glideMixin(boat);
+
+bird.glide();  // Gliding now...
+boat.glide();  // Gliding now...

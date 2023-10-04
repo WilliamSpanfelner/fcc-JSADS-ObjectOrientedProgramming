@@ -28,3 +28,15 @@ function joinBirdFraternity(candidate) {
 
 console.log(joinBirdFraternity(duck));  // true
 console.log(joinBirdFraternity(beagle));  // false
+
+/* The constructor property can be overwritten meaning 
+that it is safer to use instanceof to check the object type. */
+
+/* Write a joinDogFraternity function that takes a candidate 
+parameter and, using the constructor property, return true if the 
+candidate is a Dog, otherwise return false. */
+
+// Only change code below this line
+function joinDogFraternity(candidate) {
+
+}

@@ -17,3 +17,14 @@ let beagle = new Dog();
 console.log(duck.constructor === Bird);  // true
 console.log(beagle.constructor === Dog);  // true
 
+// The constructor property might be used as follows:
+function joinBirdFraternity(candidate) {
+    if (candidate.constructor === Bird) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(joinBirdFraternity(duck));  // true
+console.log(joinBirdFraternity(beagle));  // false

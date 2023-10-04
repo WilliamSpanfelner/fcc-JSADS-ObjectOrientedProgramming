@@ -27,9 +27,20 @@ to a new object. */
 
 function Dog(name) {
     this.name = name;
-  }
-  
-  Dog.prototype = {
+}
+
+Dog.prototype = {
     // Only change code below this line
-  
-  };
+    numLegs: 4,
+    eat: function () {
+        console.log("nom nom nom");
+    },
+    describe: function () {
+        console.log("My name is " + this.name + ".");
+    }
+};
+
+let jackRussel = new Dog("Jack");
+console.log(jackRussel.numLegs);  // 4
+jackRussel.eat();  // nom nom nom
+jackRussel.describe();  // My name is Jack.

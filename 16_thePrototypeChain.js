@@ -20,3 +20,15 @@ console.log(duck.hasOwnProperty("name"));  // true
 // Bird is the supertype for the subtype duck;
 // Object is the supertype for Bird and duck;
 // Object is a supertype of all object in JavaScript; 
+
+// Modify the code to show the correct prototype chain.
+function Dog(name) {
+    this.name = name;
+  }
+  
+  let beagle = new Dog("Snoopy");
+  
+  Dog.prototype.isPrototypeOf(beagle);  // yields true
+  
+  // Fix the code below so that it evaluates to true
+  ???.isPrototypeOf(Dog.prototype);

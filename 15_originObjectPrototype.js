@@ -21,3 +21,4 @@ function Dog(name) {
 let beagle = new Dog("Snoopy");
 
 // Only change code below this line
+console.log(Dog.prototype.isPrototypeOf(beagle));  // true

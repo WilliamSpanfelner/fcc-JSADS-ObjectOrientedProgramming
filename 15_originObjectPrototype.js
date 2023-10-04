@@ -12,3 +12,12 @@ let duck = new Bird("Daffy");
 /* Show the relationship between duck and Bird constructor
 as follows: */
 console.log(Bird.prototype.isPrototypeOf(duck));  // true
+
+// Use isPrototypeOf to check the prototype of beagle.
+function Dog(name) {
+    this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+// Only change code below this line

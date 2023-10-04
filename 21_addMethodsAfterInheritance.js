@@ -19,3 +19,23 @@ Bird.prototype.fly = function() {
 let duck = new Bird();
 duck.eat();  // nom nom nom
 duck.fly();  // I'm flying!
+
+/* Add all necessary code so the Dog object inherits from 
+Animal and the Dog's prototype constructor is set to Dog. 
+Then add a bark() method to the Dog object so that beagle 
+can both eat() and bark(). The bark() method should print 
+Woof! to the console. */
+
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Only change code below this line
+
+
+
+
+// Only change code above this line
+
+let beagle = new Dog();

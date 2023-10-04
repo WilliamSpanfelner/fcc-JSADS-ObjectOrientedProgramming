@@ -17,3 +17,17 @@ the new object's prototype */
 
 animal.eat();  // nom nom nom
 console.log(animal instanceof Animal);  // true
+
+/* Use Object.create to make two instances of Animal 
+named duck and beagle. */
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+      console.log("nom nom nom");
+    }
+  };
+  
+  // Only change code below this line
+  
+  let duck; // Change this line
+  let beagle; // Change this line

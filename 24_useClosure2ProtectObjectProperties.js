@@ -20,7 +20,8 @@ console.log(ducky.getHatchedEggCount());  // 10
 it is a private variable. Then, create a method getWeight 
 that returns the value of weight 15. */
 function Bird() {
-    this.weight = 15;
-  
-  
+    let weight = 15;
+    this.getWeight = function() {
+        return weight;
+    };
 }
